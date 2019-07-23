@@ -1,0 +1,118 @@
+.movie-app {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  padding-top: 15px;
+}
+.movie-app-header {
+  display: flex;
+  justify-content: space-between;
+}
+.name-filter {
+  height: 50px;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.name-filter-text {
+  flex: 1;
+  border: 1px solid rgb(37, 137, 219);
+  border-radius: 5px;
+  padding-left: 10px
+}
+
+.name-filter-button {
+  border: 1px solid gray;
+  color: white;
+  background-color: transparent;
+  padding: 0 10px;
+  opacity: 0.8;
+  border-radius: 5px;
+  background-color: rgb(37, 137, 219);
+  margin-left: 20px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.name-filter-button:hover{
+  cursor: pointer;
+}
+.rating-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: center;
+}
+.rating-filter > div > span:hover {
+  cursor: pointer;
+}
+.rating-filter-text {
+  font-size: 0.8em;
+}
+.movie-app-main {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.movie-card,
+.new-movie-card {
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 200px;
+  height: 250px;
+  position: relative;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.movie-rating {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+  border-top: none;
+  border-right: none;
+  color: yellow;
+}
+
+.delete-movie {
+  position: absolute;
+  color: red;
+  left: 3px;
+  top: 3px;
+  padding: 0px 4px;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+.delete-movie:hover {
+  cursor: pointer;
+}
+.movie-image {
+  background-image: url(https://www.mearto.com/assets/no-image-83a2b680abc7af87cfff7777d0756fadb9f9aecd5ebda5d34f8139668e0fc842.png);
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.movie-description {
+  border-top: 2px solid black;
+  text-align: center;
+  padding: 10px;
+}
+.new-movie-card {
+  font-size: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add-movie{
+  margin-top: 18px;
+}
